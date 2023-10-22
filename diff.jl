@@ -39,10 +39,13 @@ function solve_system(f, t0, x0, h, condition)
     tn = t0
     xn = x0
     sol = [[t0, x0...]] 
-    while condition(tn, xn)
+    i = 1
+
+    while condition(tn, xn, i)
         xn = next_point(f, tn, xn, h)
         tn += h
         push!(sol, [tn, xn...])
+        i += 1
     end
 
     # O motivo de usarmos permutedims é que queremos transformar um vetor de vetores em uma matriz
