@@ -8,6 +8,7 @@ Inicialmente precisaremos dos seguintes pacotes de Julia instalados:
 - CSV
 - DataFrames
 - Plots
+- IJulia
 
 Podemos instalar eles usando o terminal:
 
