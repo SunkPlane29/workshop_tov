@@ -14,7 +14,7 @@ Podemos instalar eles usando o terminal:
 ```
 $ julia
 julia> ]
-(@v1.9) pkg> add Interpolations, CSV, DataFrames, Plots
+(@v1.9) pkg> add Interpolations, CSV, DataFrames, Plots, IJulia
 ```
 
 O restante do código será rodado a partir do notebook `main.ipynb`.
